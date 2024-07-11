@@ -1,25 +1,28 @@
 {
   "name": "next-colors",
   "version": "1.2.0",
-  "description": "A comprehensive color manipulation library for Next.js and React applications",
-  "author": {
-    "name": "Tariel Davidashvili",
-    "email": "hello@tariel.me",
-    "url": "https://tariel.me"
-  },
+  "description": "[DEPRECATED & RENAMED] A comprehensive color manipulation library for Next.js and React applications",
+  "author": "Tariel Davidashvili <hello@tariel.me> (http://tariel.me/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iamlite/next-colors/issues",
+    "url": "https://color-core.com",
     "email": "hello@tariel.me"
   },
+  "homepage": "https://color-core.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamlite/next-colors.git"
+    "url": "https://color-core.com"
   },
   "keywords": [
     "color",
     "nextjs",
-    "react"
+    "react",
+    "colorpicker",
+    "colors",
+    "colorful",
+    "colorutility",
+    "colortools",
+    "colorconverter"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -33,7 +36,8 @@
     "docs": "npx typedoc",
     "clean": "find . -name .DS_Store -type f -print0 | xargs -0 -I {} sh -c 'echo \"Removing {}\"; git rm -f --ignore-unmatch \"{}\"; rm \"{}\"'",
     "demo-prep": "rm -rf ./demo/node_modules/next-colors/dist && cp -r dist ./demo/node_modules/next-colors/ && rm -rf ./demo/.next",
-    "prepublishOnly": "npm-run-all test build"
+    "prepublishOnly": "npm-run-all test build",
+    "postinstall": "echo \"[DEPRECATED] Warning: next-colors is deprecated. Use color-core instead.\" && exit 0"
   },
   "jest": {
     "preset": "ts-jest",
@@ -89,5 +93,17 @@
     "axios": "^1.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "funding": [
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/iamlite"
+    },
+    {
+      "type": "kofi",
+      "url": "https://ko-fi.com/iamlite"
+    }
+  ],
+  "packageManager": "yarn@4.3.1",
+  "deprecated": "This package has been renamed and moved. Use color-core instead."
 }

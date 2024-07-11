@@ -83,19 +83,27 @@ next-color/
 │   │   │   └── saturation.ts
 │   │   └── index.ts
 │   ├── utils/
-│   │   ├── color-picker-styles.ts
-│   │   └── color-picker.tsx
+│   │   ├── components/
+│   │   │   ├── __tests__/
+│   │   │   │   ├── brightness-test.ts
+│   │   │   │   ├── color-naming-test.ts
+│   │   │   │   └── color-picker-test.tsx
+│   │   │   ├── brightness.ts
+│   │   │   ├── color-naming.ts
+│   │   │   ├── color-picker-styles.ts
+│   │   │   └── color-picker.tsx
+│   │   └── index.ts
 │   ├── color.ts
 │   ├── index.ts
 │   └── types.ts
 ├── .gitignore
 ├── .npmignore
+├── .yarnrc.yml
 ├── CHANGELOG.md
 ├── DEVGUIDE.md
 ├── LICENSE
 ├── README.md
-├── jest.config.ts
 ├── package.json
 ├── structure.tree
 ├── tsconfig.json
-└── typedoc.json
+└── yarn.lock
